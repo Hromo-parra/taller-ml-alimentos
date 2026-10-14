@@ -1,6 +1,6 @@
 # Fruta + datos: taller de Machine Learning
 
-Taller interactivo de Ingeniería en Alimentos, de primero a octavo semestre. Versión GUIADO v4, 13 de octubre de 2026. Material didáctico: Héctor Romo-Parra / NeuroPsicoLocos.
+Taller interactivo de Ingeniería en Alimentos, de primero a octavo semestre. Versión GUIADO v5, 14 de octubre de 2026. Material didáctico: Héctor Romo-Parra / NeuroPsicoLocos.
 
 Abra `index.html` en Safari o Chrome, o visite la página de GitHub Pages de este repositorio. El HTML incluye estilos, datos y código: no requiere cuenta, Python, instalación ni servicios externos. Tras descargarlo puede usarse sin conexión.
 
@@ -12,7 +12,7 @@ Las elecciones y notas permanecen en memoria de la pestaña y se pierden al cerr
 
 ## Licencias
 
-El contenido didáctico original (textos explicativos, actividades y representaciones educativas) se publica bajo **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Crédito: **Héctor Romo-Parra / NeuroPsicoLocos, Fruta + datos, GUIADO v4, 2026**. Al reutilizar contenido, enlace la licencia e indique los cambios. Véase `LICENSE-CONTENIDO.md`.
+El contenido didáctico original (textos explicativos, actividades y representaciones educativas) se publica bajo **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Crédito: **Héctor Romo-Parra / NeuroPsicoLocos, Fruta + datos, GUIADO v5, 2026**. Al reutilizar contenido, enlace la licencia e indique los cambios. Véase `LICENSE-CONTENIDO.md`.
 
 La licencia CC BY 4.0 **no se aplica al código de software**, incluidos JavaScript y CSS incrustados en `index.html`. No se encontró una licencia de software preexistente en el paquete original; su licencia de reutilización queda pendiente. El código se publica autorizado para consultar el funcionamiento del taller, sin otorgar una nueva licencia de software. No se añade MIT ni otra licencia por inferencia. Se mantienen los avisos existentes. No hay bibliotecas o recursos externos incorporados.
 
@@ -21,3 +21,6 @@ La licencia CC BY 4.0 **no se aplica al código de software**, incluidos JavaScr
 Antes de publicar se aprobaron 17 pruebas numéricas independientes, 13 comprobaciones estáticas, 12 de instrucciones y una regresión de navegación con DOM mínimo. También se recorrió v4 en Safari en macOS: introducciones, elecciones, tabla/cuestionario, entrenamiento, prueba congelada, Shapley, edición/restauración de escenario y experimento de fuga/reparación. Esto no equivale a validar todas las combinaciones, accesibilidad completa o todos los dispositivos. Las cifras del ejercicio son resultados de datos sintéticos, no mediciones alimentarias reales.
 
 Los informes internos y conversaciones no forman parte del repositorio público.
+
+
+La v5 aclara entrenamiento con respuestas conocidas, lotes, prueba con ajustes bloqueados, seis frutos de detalle y lectura de matrices y Shapley. El motor y datos se conservan. El flujo v5 se comprobó de nuevo en Safari; la prueba principal mantuvo sus resultados después de añadir y retirar el sello del árbol secundario.
