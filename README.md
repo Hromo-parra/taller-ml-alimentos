@@ -1,6 +1,6 @@
 # Fruta + datos: taller de Machine Learning
 
-Taller interactivo de Ingeniería en Alimentos, de primero a octavo semestre. Versión GUIADO v7, 14 de octubre de 2026. Material didáctico: Héctor Romo-Parra / NeuroPsicoLocos.
+Taller interactivo de Ingeniería en Alimentos, de primero a octavo semestre. Versión GUIADO v8, 14 de octubre de 2026. Material didáctico: Héctor Romo-Parra / NeuroPsicoLocos.
 
 Abra `index.html` en Safari o Chrome, o visite la página de GitHub Pages de este repositorio. El HTML incluye estilos, datos y código: no requiere cuenta, Python, instalación ni servicios externos. Tras descargarlo puede usarse sin conexión.
 
@@ -12,15 +12,15 @@ Las elecciones y notas permanecen en memoria de la pestaña y se pierden al cerr
 
 ## Licencias
 
-El contenido didáctico original (textos explicativos, actividades y representaciones educativas) se publica bajo **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Crédito: **Héctor Romo-Parra / NeuroPsicoLocos, Fruta + datos, GUIADO v7, 2026**. Al reutilizar contenido, enlace la licencia e indique los cambios. Véase `LICENSE-CONTENIDO.md`.
+El contenido didáctico original (textos explicativos, actividades y representaciones educativas) se publica bajo **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Crédito: **Héctor Romo-Parra / NeuroPsicoLocos, Fruta + datos, GUIADO v8, 2026**. Al reutilizar contenido, enlace la licencia e indique los cambios. Véase `LICENSE-CONTENIDO.md`.
 
 La licencia CC BY 4.0 **no se aplica al código de software**, incluidos JavaScript y CSS incrustados en `index.html`. No se encontró una licencia de software preexistente en el paquete original; su licencia de reutilización queda pendiente. El código se publica autorizado para consultar el funcionamiento del taller, sin otorgar una nueva licencia de software. No se añade MIT ni otra licencia por inferencia. Se mantienen los avisos existentes. No hay bibliotecas o recursos externos incorporados.
 
 ## Comprobaciones
 
-Antes de publicar v7 se aprobaron 17 pruebas numéricas independientes, 13 comprobaciones estáticas, 18 pedagógicas/eventos y navegación con DOM mínimo. Se comprobó que una selección pendiente no se confirma, el camino del fruto corresponde al árbol activo, la prueba se calcula una vez y explorar otros árboles/SHAP conserva la identidad y el snapshot del árbol evaluado y su resultado. No se recalculan métricas de prueba reservada en la exploración. Motor, datos, semilla, split y Shapley se conservan.
+Antes de publicar v8 se aprobaron 17 pruebas numéricas independientes, 13 comprobaciones estáticas, 21 pedagógicas/eventos y navegación con DOM mínimo. Se comprobó que una selección pendiente no se confirma, el camino del fruto corresponde al árbol activo, la prueba se calcula una vez y explorar otros árboles/SHAP conserva la identidad y el snapshot del árbol evaluado y su resultado. No se recalculan métricas de prueba reservada en la exploración. Motor, datos, semilla, split y Shapley se conservan.
 
-La revisión visual y funcional real de v7 en navegador sigue pendiente. Las pruebas estáticas y de eventos con DOM mínimo no equivalen a comprobar diseño, proyector, móviles, accesibilidad o interacción real. Las cifras del ejercicio son resultados sintéticos, no mediciones alimentarias reales.
+La revisión visual y funcional real de v8 en navegador sigue pendiente. Las pruebas estáticas y de eventos con DOM mínimo no equivalen a comprobar diseño, proyector, móviles, accesibilidad o interacción real. Las cifras del ejercicio son resultados sintéticos, no mediciones alimentarias reales.
 
 ## Cambios de v6
 
@@ -35,3 +35,9 @@ Los informes internos y conversaciones no forman parte del repositorio público.
 Las tarjetas y nodos claros declaran texto oscuro explícito, también dentro del panel oscuro de confirmación. El ejemplo L01-F1 muestra medidas, etiqueta separada, decisiones Sí/No y respuesta en un recorrido vertical calculado. El árbol completo conserva todas sus ramas en una vista complementaria desplegable y apilada, con estructura responsive. No se cambia el estado del modelo, snapshot, dataset, motor ni SHAP.
 
 Las comprobaciones nominales de color superan 4.5:1 para los fondos claros usados por los componentes corregidos y el panel oscuro. Son cálculos a partir de CSS, sin medición de estilos computados u overflow. V7 aún requiere comprobación visual y funcional real en navegador; no se presenta una captura renderizada propia como evidencia.
+
+## Comparación y elección v8
+
+El paso 6 separa «Compara tus modelos» de «Comprueba tu elección». Solo opciones entrenadas en esta sesión tienen métricas de entrenamiento/práctica capturadas y un modelo exacto guardado. Elegir una tarjeta recupera ese objeto sin reentrenar. Se recomienda elegir con práctica y, si empatan, menos preguntas. Confirmar evalúa una sola elección con los frutos reservados y conserva el modelo y resultado inmutables; no muestra pruebas por opción. Exploración y Shapley siguen separados del modelo evaluado. El cierre celebra entrenar y comprobar un modelo, con límite explícito de frutos simulados.
+
+Pasaron 21 regresiones pedagógicas/eventos, incluidas opciones no entrenadas, guardado/recuperación de modelos exactos, consentimiento invalidado al cambiar elección, confirmación única y snapshot intacto durante exploración. Motor numérico y datos intactos. QA visual real de v8 sigue pendiente: el navegador interno no estaba disponible y no se controló Safari. Las reglas responsive y contrastes se verificaron en fuentes; no se midió overflow en navegador.
