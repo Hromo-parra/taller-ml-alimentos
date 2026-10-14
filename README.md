@@ -1,6 +1,6 @@
 # Fruta + datos: taller de Machine Learning
 
-Taller interactivo de Ingeniería en Alimentos, de primero a octavo semestre. Versión GUIADO v5, 14 de octubre de 2026. Material didáctico: Héctor Romo-Parra / NeuroPsicoLocos.
+Taller interactivo de Ingeniería en Alimentos, de primero a octavo semestre. Versión GUIADO v6, 14 de octubre de 2026. Material didáctico: Héctor Romo-Parra / NeuroPsicoLocos.
 
 Abra `index.html` en Safari o Chrome, o visite la página de GitHub Pages de este repositorio. El HTML incluye estilos, datos y código: no requiere cuenta, Python, instalación ni servicios externos. Tras descargarlo puede usarse sin conexión.
 
@@ -12,15 +12,20 @@ Las elecciones y notas permanecen en memoria de la pestaña y se pierden al cerr
 
 ## Licencias
 
-El contenido didáctico original (textos explicativos, actividades y representaciones educativas) se publica bajo **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Crédito: **Héctor Romo-Parra / NeuroPsicoLocos, Fruta + datos, GUIADO v5, 2026**. Al reutilizar contenido, enlace la licencia e indique los cambios. Véase `LICENSE-CONTENIDO.md`.
+El contenido didáctico original (textos explicativos, actividades y representaciones educativas) se publica bajo **Creative Commons Attribution 4.0 International (CC BY 4.0)**. Crédito: **Héctor Romo-Parra / NeuroPsicoLocos, Fruta + datos, GUIADO v6, 2026**. Al reutilizar contenido, enlace la licencia e indique los cambios. Véase `LICENSE-CONTENIDO.md`.
 
 La licencia CC BY 4.0 **no se aplica al código de software**, incluidos JavaScript y CSS incrustados en `index.html`. No se encontró una licencia de software preexistente en el paquete original; su licencia de reutilización queda pendiente. El código se publica autorizado para consultar el funcionamiento del taller, sin otorgar una nueva licencia de software. No se añade MIT ni otra licencia por inferencia. Se mantienen los avisos existentes. No hay bibliotecas o recursos externos incorporados.
 
 ## Comprobaciones
 
-Antes de publicar se aprobaron 17 pruebas numéricas independientes, 13 comprobaciones estáticas, 12 de instrucciones y una regresión de navegación con DOM mínimo. También se recorrió v4 en Safari en macOS: introducciones, elecciones, tabla/cuestionario, entrenamiento, prueba congelada, Shapley, edición/restauración de escenario y experimento de fuga/reparación. Esto no equivale a validar todas las combinaciones, accesibilidad completa o todos los dispositivos. Las cifras del ejercicio son resultados de datos sintéticos, no mediciones alimentarias reales.
+Antes de publicar v6 se aprobaron 17 pruebas numéricas independientes, 13 comprobaciones estáticas, 18 pedagógicas/eventos y navegación con DOM mínimo. Se comprobó que una selección pendiente no se confirma, el camino del fruto corresponde al árbol activo, la prueba se calcula una vez y explorar otros árboles/SHAP conserva la identidad y el snapshot del árbol evaluado y su resultado. No se recalculan métricas de prueba reservada en la exploración. Motor, datos, semilla, split y Shapley se conservan.
+
+La revisión visual y funcional real de v6 en navegador sigue pendiente. Las pruebas estáticas y de eventos con DOM mínimo no equivalen a comprobar diseño, proyector, móviles, accesibilidad o interacción real. Las cifras del ejercicio son resultados sintéticos, no mediciones alimentarias reales.
+
+## Cambios de v6
+
+La comparación sencilla siempre responde la categoría más frecuente de entrenamiento y muestra sus recuentos. El selector «Hasta 1/2/3 preguntas» distingue la selección pendiente del árbol activo. El árbol completo muestra el camino calculado de L01-F1 con sus medidas y la etiqueta conocida separada. Antes de confirmar se muestran el árbol entrenado y su práctica.
+
+Tras la prueba, el modo de aprendizaje permite entrenar y explicar otro árbol aparte usando entrenamiento y práctica; no reemplaza el árbol evaluado ni presenta nuevas pruebas reservadas. El encabezado identifica el modo y permite volver al árbol evaluado. SHAP muestra profundidad, medidas usadas, referencia, ceros exactos frente a redondeo, intervalo de decisión y un ejemplo compatible de firmeza. Los controles consultan otro fruto, no reentrenan. Recargar o reiniciar repite los mismos datos y no crea una prueba independiente.
 
 Los informes internos y conversaciones no forman parte del repositorio público.
-
-
-La v5 aclara entrenamiento con respuestas conocidas, lotes, prueba con ajustes bloqueados, seis frutos de detalle y lectura de matrices y Shapley. El motor y datos se conservan. El flujo v5 se comprobó de nuevo en Safari; la prueba principal mantuvo sus resultados después de añadir y retirar el sello del árbol secundario.
